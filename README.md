@@ -7,8 +7,13 @@
 - vue
   - Collapse.vue            可折叠容器
   - CurrencyInput.vue       币种选择输入框
+  - textarea.vue            文本域组件
 - js
   - convertMoney            将数字转换为千分位分割，用于金额显示
+  - textSize                计算字体宽度
+  - rem                     自动计算rem的基础fontsize值
+- styles                    基础的样式集
+
 
 ## Personal toolset
 
@@ -17,7 +22,11 @@
 Below is the document index
 
 - vue
-  - Collapse.vue            Collapsible container
-  - CurrencyInput.vue       Currency selection input box
+   - Collapse.vue collapsible container
+   - CurrencyInput.vue currency selection input box
+   - textarea.vue text field component
 - js
-  - convertMoney            Convert numbers to thousandths split for amount display
+   - convertMoney converts digits to thousandths for display of amounts
+   - textSize calculate font width
+   - rem automatically calculates the basic font size value of rem
+- styles based style set
