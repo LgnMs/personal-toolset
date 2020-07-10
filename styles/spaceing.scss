@@ -1,0 +1,90 @@
+@import './variables.scss';
+
+// 间距通用样式
+@for $size from 0 through 12 {
+  @each $direction in t, b, l, r, x, y, a {
+    // 内间距通用样式
+    .p#{$direction}-#{$size} {
+      @if $direction == a {
+        padding: $size * $base-px;
+      } @else if $direction == t {
+        padding-top: $size * $base-px;
+      } @else if $direction == b {
+        padding-bottom: $size * $base-px;
+      } @else if $direction == l {
+        padding-left: $size * $base-px;
+      } @else if $direction == r {
+        padding-right: $size * $base-px;
+      } @else if $direction == x {
+        padding-right: $size * $base-px;
+        padding-left: $size * $base-px;
+      } @else if $direction == y {
+        padding-top: $size * $base-px;
+        padding-bottom: $size * $base-px;
+      }
+    }
+
+    // 负内间距通用样式
+    .p#{$direction}-n#{$size} {
+      @if $direction == a {
+        padding: -$size * $base-px;
+      } @else if $direction == t {
+        padding-top: -$size * $base-px;
+      } @else if $direction == b {
+        padding-bottom: -$size * $base-px;
+      } @else if $direction == l {
+        padding-left: -$size * $base-px;
+      } @else if $direction == r {
+        padding-right: -$size * $base-px;
+      } @else if $direction == x {
+        padding-right: -$size * $base-px;
+        padding-left: -$size * $base-px;
+      } @else if $direction == y {
+        padding-top: -$size * $base-px;
+        padding-bottom: -$size * $base-px;
+      }
+    }
+
+    // 外间距通用样式
+    .m#{$direction}-#{$size} {
+      @if $direction == a {
+        margin: $size * $base-px;
+      } @else if $direction == t {
+        margin-top: $size * $base-px;
+      } @else if $direction == b {
+        margin-bottom: $size * $base-px;
+      } @else if $direction == l {
+        margin-left: $size * $base-px;
+      } @else if $direction == r {
+        margin-right: $size * $base-px;
+      } @else if $direction == x {
+        margin-left: $size * $base-px;
+        margin-right: $size * $base-px;
+      } @else if $direction == y {
+        margin-top: $size * $base-px;
+        margin-bottom: $size * $base-px;
+      }
+    }
+
+    // 负间距通用样式
+    .m#{$direction}-n#{$size} {
+      @if $direction == a {
+        margin: -$size * $base-px;
+      } @else if $direction == t {
+        margin-top: -$size * $base-px;
+      } @else if $direction == b {
+        margin-bottom: -$size * $base-px;
+      } @else if $direction == l {
+        margin-left: -$size * $base-px;
+      } @else if $direction == r {
+        margin-right: -$size * $base-px;
+      } @else if $direction == x {
+        margin-left: -$size * $base-px;
+        margin-right: -$size * $base-px;
+      } @else if $direction == y {
+        margin-top: -$size * $base-px;
+        margin-bottom: -$size * $base-px;
+      }
+    }
+  }
+}

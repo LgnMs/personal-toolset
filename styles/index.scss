@@ -1,0 +1,51 @@
+// 页面通用样式，所有样式的像素会通过postcss处理转换为rem，rem的计算规则以物理像素750px，逻辑像素350px为准
+// rem 计算规则为 vw * 100 / 750，代码逻辑位于index.html（所以一个350px的屏幕，rem的基准值为50）
+// 基于上述计算规则，假若在iPhone6中要显示一个14px的元素，实际定义时应当定义为28px
+// 因为28px / 100 = 0.28rem
+// 0.28rem * 50px = 14px
+
+@import './variables.scss';
+@import './text.scss';
+@import './spaceing.scss';
+@import './colors.scss';
+@import './flex.scss';
+
+.d {
+  &-inline {
+    display: inline;
+  }
+  &-inline-block {
+    display: inline-block;
+  }
+  &-block {
+    display: block;
+  }
+  &-flex {
+    display: flex;
+  }
+}
+.overflow {
+  &-hidden {
+    overflow: hidden;
+  }
+  &-auto {
+    overflow: auto;
+  }
+  &-x-auto {
+    overflow-x: auto;
+  }
+  &-y-auto {
+    overflow-y: auto;
+  }
+}
+
+.content-height {
+  height: calc(100vh - 88px);
+  box-sizing: border-box;
+  overflow: auto;
+}
+.line {
+  height: 2px;
+  background-color: rgba($color: #d9d9d9, $alpha: 0.66);
+  width: 100%;
+}

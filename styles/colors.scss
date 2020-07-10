@@ -1,0 +1,35 @@
+@import './variables.scss';
+
+@mixin darken-light($color) {
+  @for $index from 1 to 10 {
+    &.darken-#{$index} {
+      background-color: darken($color: $color, $amount: $index);
+    }
+    &.lighten-#{$index} {
+      background-color: lighten($color: $color, $amount: $index);
+    }
+  }
+}
+
+.primary-color {
+  background-color: $primary-color;
+}
+.blue {
+  background-color: $blue;
+  @include darken-light($blue);
+}
+.red {
+  background-color: $red;
+}
+.white {
+  background-color: $white;
+}
+.black {
+  background-color: $black;
+}
+.grey {
+  background-color: $grey;
+}
+.bg-grey {
+  background-color: $bg-grey;;
+}

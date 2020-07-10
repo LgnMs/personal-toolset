@@ -1,0 +1,79 @@
+@import './variables.scss';
+
+.font0 {
+  font-size: 0;
+}
+.text {
+  &-h3 {
+    font-size: $base-px * 6;
+    color: $text-black;
+    font-weight: bolder;
+  }
+  &-h4 {
+    font-size: $base-px * 5;
+    color: $text-black;
+    font-weight: bolder;
+  }
+  &-h5 {
+    font-size: $base-px * 4 + $base-px / 2;
+    color: $text-black;
+    font-weight: bolder;
+  }
+  &-h6 {
+    font-size: $base-px * 4 + $base-px / 2;
+    color: $text-black;
+  }
+  &-subtitle-1 {
+    font-size: $base-px * 4.25;
+    color: $text-black;
+  }
+  
+  &-subtitle-2 {
+    font-size: $base-px * 3 + $base-px / 2;
+    color: $text-black;
+    font-weight: bolder;
+  }
+  &-body-1 {
+    font-size: $base-px * 4;
+    color: $text-black;
+  }
+  &-body-2 {
+    font-size: $base-px * 3 + $base-px / 2;
+    color: $text-black;
+  }
+  &-body-3 {
+    font-size: $base-px * 3;
+    color: $text-black;
+  }
+
+  @each $di in left, right, center {
+    &-#{$di} {
+      text-align: #{$di}; 
+    }
+  }
+
+  &--white {
+    color: $white !important;
+  }
+  &--black {
+    color: $text-black !important;
+  }
+  &--888 {
+    color: $text-888 !important;
+  }
+  &--030303 {
+    color: #030303 !important;
+  }
+  &--8f8e94 {
+    color: #8f8e94 !important;
+  }
+  &--red {
+    color: $red !important;
+  }
+  &--green {
+    color: $green !important;
+  }
+  &--yellow {
+    color: $text-yellow !important;
+  }
+}
