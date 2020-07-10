@@ -68,7 +68,7 @@ export default {
 
 </script>
 
-<style lang="less">
+<style>
 .jcCollapse {
   overflow: hidden;
   transition: all .3s ease;

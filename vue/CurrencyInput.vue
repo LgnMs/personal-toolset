@@ -141,8 +141,8 @@ export default {
   }
 };
 </script>
-
-<style lang="less">
+scss
+<style lang="scss">
 .input-with-select .el-input-group__prepend {
   background-color: #fff;
   .el-select .el-input {
