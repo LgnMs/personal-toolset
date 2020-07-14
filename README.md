@@ -14,6 +14,7 @@
   - textSize                计算字体宽度
   - rem                     自动计算rem的基础fontsize值
 - styles                    基础的样式集
+- directive                 自定义指令
 
 
 ## Personal toolset
@@ -32,3 +33,4 @@ Below is the document index
    - textSize                         calculate font width
    - rem                              automatically calculates the basic font size value of rem
 - styles                              based style set
+- directive                           Custom command
